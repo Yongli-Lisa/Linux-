@@ -104,6 +104,10 @@ $ perf record # 按Ctrl+C终止采样
 [ perf record: Captured and wrote 0.452 MB perf.data (6093 samples) ]
 
 $ perf report # 展示类似于perf top的报告
+
+# -g开启调用关系分析，-p指定php-fpm的进程号21515
+$ perf top -g -p 21515
+
 ```
 
 
